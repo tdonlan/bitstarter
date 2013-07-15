@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 
 response.send('In get method');
 
-var buf1 = new Buffer(fs.readFileSync("./index.html");
+var buf1 = new Buffer(fs.readFileSync("./index.html"));
 resonse.send(buf1.toString());
 
 console.log('In get method');
