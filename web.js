@@ -19,7 +19,7 @@ console.log(fileBuf.toString());
  response.send(fileBuf.toString());
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
 
 var buf1 = new Buffer(fs.readFileSync("./index.html"));
