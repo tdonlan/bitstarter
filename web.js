@@ -6,8 +6,14 @@ var app = express.createServer(express.logger());
 
 
 app.get('/', function(request, response) {
- 
+
+response.send('In get method');
+
+console.log('In get method');
+
 var fileBuf = fs.readFileSync('index.html');
+
+console.log(fileBuf.toString());
 
  response.send(fileBuf.toString());
 });
