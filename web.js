@@ -8,7 +8,7 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
 
 var buf1 = new Buffer(fs.readFileSync("./index.html"));
-resonse.send(buf1.toString());
+response.send(buf1.toString());
 
 console.log('In get method');
 
